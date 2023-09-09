@@ -15,10 +15,10 @@ export default function Background() {
         <Card className='w-full -mt-5'>
             <CardHeader className="space-y-1">
                 <CardTitle className="text-2xl flex justify-between items-center">
-                    Background
+                    Plano de fundo
                 </CardTitle>
                 <CardDescription>
-                    Customize your background theme from here.
+                    Customize o seu plano de fundo.
                 </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4 pb-2.5">

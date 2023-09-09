@@ -11,7 +11,7 @@ const DemoData: FC<DemoDataProps> = ({ }) => {
     return (
         <Button className='w-full' onClick={showDemo}>
             <Play className='mr-2 h-4 w-4' />
-            Demo
+            Exemplo
         </Button>
     )
 }

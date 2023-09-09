@@ -37,7 +37,7 @@ export const SortableLinks: FC<SortableLinksProps> = ({ id, index }) => {
                 <div className='space-y-4'>
                     <div className="grid md:grid-cols-2 gap-2" >
                         <div className="grid gap-2">
-                            <Label htmlFor={`link-icon-${uniqueID}`}>Icon Key</Label>
+                            <Label htmlFor={`link-icon-${uniqueID}`}>Ícone key</Label>
                             <Input
                                 id={`link-icon-${uniqueID}`}
                                 name="i"
@@ -52,7 +52,7 @@ export const SortableLinks: FC<SortableLinksProps> = ({ id, index }) => {
                             />
                         </div>
                         <div className="grid gap-2">
-                            <Label htmlFor={`link-name-${uniqueID}`}>Lable</Label>
+                            <Label htmlFor={`link-name-${uniqueID}`}>Título</Label>
                             <Input
                                 id={`link-name-${uniqueID}`}
                                 name="l"
@@ -68,7 +68,7 @@ export const SortableLinks: FC<SortableLinksProps> = ({ id, index }) => {
                         </div>
                     </div>
                     <div className="grid gap-2">
-                        <Label htmlFor={`link-name-${uniqueID}`}>Destination URL</Label>
+                        <Label htmlFor={`link-name-${uniqueID}`}>URL</Label>
                         <Input
                             id={`link-url-${uniqueID}`}
                             name="u"

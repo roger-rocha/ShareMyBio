@@ -79,76 +79,9 @@ export default function ShortnerButton() {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[450px]" showClose={false}>
                 <Tabs defaultValue="account" >
-                    <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="bitly">Bit.ly</TabsTrigger>
+                    <TabsList className="grid w-full">
                         <TabsTrigger value="dubco">Dub.co</TabsTrigger>
                     </TabsList>
-                    <TabsContent value="bitly">
-                        <CardHeader className='px-0'>
-                            <CardTitle>Bit.ly</CardTitle>
-                            <CardDescription>
-                                Generate a quick short link with bit.ly
-                            </CardDescription>
-                        </CardHeader>
-                        {/* <CardContent className="space-y-2 px-0"> */}
-                        {/* <Input
-                                placeholder="Enter your link"
-                                value={inputLink}
-                                required
-                                readOnly
-                            /> */}
-                        {/* </CardContent> */}
-                        <CardFooter className='p-0'>
-                            {/* {isShortUrl ? (
-                                <Button
-                                    className="w-full"
-                                    onClick={() => {
-                                        copyToClipboard()
-                                        setHasCopied(true);
-                                    }}
-                                >
-                                    {
-                                        hasCopied
-                                            ? (
-                                                <>
-                                                    <Check className="mr-2 h-4 w-4" />
-                                                    Copied
-                                                </>
-                                            )
-                                            : (
-                                                <>
-                                                    <Copy className="mr-2 h-4 w-4" />
-                                                    Copy Link
-                                                </>
-                                            )
-                                    }
-                                </Button>
-                            ) : (
-                                <Button
-                                    className="w-full"
-                                    onClick={handleShortLink}
-                                >
-                                    {isLoading ? (
-                                        <Loader2
-                                            className="mr-2 h-4 w-4 animate-spin"
-                                            aria-hidden="true"
-                                        />
-                                    ) : (
-
-                                        "Create short url"
-                                    )}
-
-                                </Button>
-                            )} */}
-                            <Link
-                                target='_blank'
-                                href="https://bitly.com/"
-                                className={cn(buttonVariants(), 'w-full')}
-                            >
-                                Visit website
-                            </Link>
-                        </CardFooter>
-                    </TabsContent>
                     <TabsContent value="dubco">
                         <CardHeader className='px-0'>
                             <CardTitle>Dub.co</CardTitle>

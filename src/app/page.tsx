@@ -8,15 +8,15 @@ import PreviewButton from '@/components/buttons/PreviewButton'
 import DemoData from '@/components/buttons/DemoData'
 import { buttonVariants } from '@/components/ui/button'
 import Publish from '@/components/buttons/Publish'
-import { Github } from 'lucide-react'
+import {Github, Heart} from 'lucide-react'
 import ShortnerButton from '@/components/buttons/ShortnerButton'
 import Background from '@/components/background/Background'
 
 export const siteConfig = {
-  name: "LinkNode - one page, many links.",
-  description: "LinkNode is an open-source tool that helps you generate one link for all your links.",
+  name: "Share My Bio - seus links em um só lugar.",
+  description: "Share My Bio é uma alternativa gratuita ao link tree.",
   ogImage: "https://linknode.vercel.app/og-image.png",
-  url: "https://linknode.vercel.app",
+  url: "https://share-my-bio.vercel.app/",
 }
 
 export default function Home() {
@@ -34,13 +34,12 @@ export default function Home() {
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2 justify-center items-center w-full '>
             <DemoData />
             <Publish />
-            <ShortnerButton />
             <Link
               target='_blank'
-              href="http://github.com/sujjeee/linknode"
+              href="https://www.rogerocha.com/"
               className={buttonVariants()}>
-              <Github className='mr-2 h-4 w-4' />
-              Github
+              <Heart className='mr-2 h-4 w-4' />
+                Feito por R.R
             </Link>
           </div>
         </div>

@@ -87,11 +87,11 @@ const AdditionalLinksForm: FC<AdditionalLinksFormProps> = () => {
             <Card className='w-full'>
                 <CardHeader className="space-y-1">
                     <CardTitle className="text-2xl flex justify-between items-center">
-                        Extra Links
+                        Links Personalizados
                         <GetIconInfo />
                     </CardTitle>
                     <CardDescription>
-                        Enter your additional link details here.
+                        Adicione as informações do seus links.
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="grid gap-4">

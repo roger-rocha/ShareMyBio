@@ -29,26 +29,26 @@ const ProfileForm: FC<ProfileFormProps> = () => {
     return (
         <Card className='w-full'>
             <CardHeader className="space-y-1">
-                <CardTitle className="text-2xl">Profile Information</CardTitle>
+                <CardTitle className="text-2xl">Informação do Perfil</CardTitle>
                 <CardDescription>
-                    Enter your profile or title information here.
+                    Coloque a informação do seu perfil
                 </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4">
                 <div className="grid md:grid-cols-2 gap-2">
                     <div>
-                        <Label htmlFor="name">Name</Label>
+                        <Label htmlFor="name">Nome</Label>
                         <Input
                             id="name"
                             name="n"
                             type="text"
-                            placeholder="John Doe"
+                            placeholder="Roger Rocha"
                             value={data.n}
                             onChange={handleInputChange}
                         />
                     </div>
                     <div>
-                        <Label htmlFor="Profile-url">Profile Url</Label>
+                        <Label htmlFor="Profile-url">Url da sua foto</Label>
                         <Input
                             id="Profile-url"
                             name="i"
@@ -60,11 +60,11 @@ const ProfileForm: FC<ProfileFormProps> = () => {
                     </div>
                 </div>
                 <div className="grid gap-2">
-                    <Label htmlFor="description">About yourself</Label>
+                    <Label htmlFor="description">Sobre você</Label>
                     <Textarea
                         id="description"
                         name="d"
-                        placeholder='type something here...'
+                        placeholder='Escreva alguma coisa...'
                         value={data.d}
                         onChange={handleInputChange}
                     />

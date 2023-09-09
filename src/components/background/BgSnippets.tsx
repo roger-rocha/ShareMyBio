@@ -76,61 +76,51 @@ export const BACKGROUND_OPTIONS = [
     {
         code: '#FFFFFF',
         component: <BgTheme1 />,
-        name: 'WhiteCanvas'
+        name: 'Branco'
     },
     {
         code: '#4F4F4F',
         component: <BgTheme8 />,
-        name: 'ShadowyGray'
+        name: 'Sombreado'
     },
     {
         code: '#C9EBFF',
         component: <BgTheme2 />,
-        name: 'LinearSky',
+        name: 'Céu',
     },
     {
         code: '#E6E7EB',
         component: <BgTheme9 />,
-        name: 'SubtleGrayDots',
+        name: 'Dots',
     },
     {
         code: '#FF00FF',
         component: <BgTheme7 />,
-        name: 'BlurredFuchsia',
+        name: 'Fuchsia',
     },
     {
         code: '#E5E7EB',
         component: <BgTheme10 />,
-        name: 'MaskedGray',
+        name: 'Mash',
     },
     {
         code: '#808080',
         component: <BgTheme11 />,
-        name: 'GradientGrid',
-    },
-    {
-        code: '#F0F0F0',
-        component: <BgTheme12 />,
-        name: 'LightGrayLines',
+        name: 'Grid',
     },
     {
         code: '#00A3FF',
         component: <BgTheme4 />,
-        name: 'RadiantBlue',
+        name: 'Azul',
     },
     {
         code: '#AD6DF4',
         component: <BgTheme5 />,
-        name: 'GradientOrb',
+        name: 'Orbital',
     },
     {
         code: '#63E',
         component: <BgTheme6 />,
-        name: 'RadialHalo',
-    },
-    {
-        code: '#D5C5FF',
-        component: <BgTheme3 />,
-        name: 'VividCircles',
+        name: 'Radial',
     },
 ] as const;

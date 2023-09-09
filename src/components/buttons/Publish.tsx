@@ -57,17 +57,17 @@ const Publish: FC<PublishProps> = ({ }) => {
             <DialogTrigger asChild>
                 <Button className='w-full' onClick={publish}>
                     <Send className='mr-2 h-4 w-4' />
-                    Publish
+                    Publicar
                 </Button>
             </DialogTrigger>
 
             <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
                     <DialogTitle className="flex items-center">
-                        Share your page
+                        Compartilhe sua página
                     </DialogTitle>
                     <DialogDescription className="text-left">
-                        You can share your page with others and make it accessible from anywhere.
+                        Você consegue compartilhar essa página com outros.
                     </DialogDescription>
                 </DialogHeader>
                 {!isEmpty ? (
@@ -82,14 +82,14 @@ const Publish: FC<PublishProps> = ({ }) => {
                                     className="w-full"
                                     onClick={() => {
                                         navigator.share({
-                                            title: `${data.n} - LinkNode`,
-                                            text: `Find all of ${data.n}'s links in one place.`,
+                                            title: `${data.n} - Share My Bio`,
+                                            text: `Encontre todos ${data.n}'s links em um lugar.`,
                                             url: `${inputLink}`,
                                         })
                                     }}
                                 >
                                     <Share2 className="mr-2 h-4 w-4" />
-                                    Share
+                                    Compartilhar
                                 </Button>
                                 <Button
                                     className="w-full"
@@ -103,13 +103,13 @@ const Publish: FC<PublishProps> = ({ }) => {
                                             ? (
                                                 <>
                                                     <Check className="mr-2 h-4 w-4" />
-                                                    Copied
+                                                    Copiado
                                                 </>
                                             )
                                             : (
                                                 <>
                                                     <Copy className="mr-2 h-4 w-4" />
-                                                    Copy Link
+                                                    Copiar Link
                                                 </>
                                             )
                                     }
@@ -121,7 +121,7 @@ const Publish: FC<PublishProps> = ({ }) => {
                 ) : (
                     <DialogClose>
                         <Button className="w-full">
-                            Can&#39;t publish with empty fields!
+                           Você não pode publicar com campos vazios
                         </Button>
                     </DialogClose>
                 )}

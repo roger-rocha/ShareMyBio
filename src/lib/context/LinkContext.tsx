@@ -11,15 +11,10 @@ interface DataProps {
     i: string;
     n: string;
     d: string;
-    f: string;
     t: string;
-    ig: string;
-    tg: string;
     e: string;
-    y: string;
     gh: string;
     l: string;
-    w: string;
     bg: string
     ls: AdditionalLinkProps[];
 }
@@ -41,63 +36,41 @@ const initialData: DataProps = {
     n: '',
     i: '',
     d: '',
-    f: '',
     t: '',
-    ig: '',
-    tg: '',
     gh: '',
     l: '',
     e: '',
-    w: '',
-    y: '',
     bg: '',
     ls: [],
 };
 
 const demoData: DataProps = {
-    n: 'James Smith',
-    i: 'https://cdn.discordapp.com/attachments/1084897258920738839/1148135723782914078/christian-buehner-DItYlc26zVI-unsplash1.jpg',
-    d: "I'm a self-taught developer who is always learning and creating cool stuffs.",
-    f: 'https://www.facebook.com/james_smith',
-    t: 'https://twitter.com/james_smith',
-    ig: 'https://www.instagram.com/james_smith',
-    tg: 'https://t.me/james_smith',
-    gh: 'https://github.com/james_smith',
-    l: 'https://linkedin.com/james_smith',
-    e: 'mail@james_smith.cc',
-    w: '+916666666666',
-    y: 'https://youtube.com/@james_smith',
-    bg: '#4F4F4F',
+    n: 'Roger Rocha',
+    i: 'https://avatars.githubusercontent.com/u/74687838?v=4',
+    d: " O Desenvolvedor para seu projeto.",
+    t: 'https://twitter.com/rogerrochadev',
+    gh: 'https://github.com/roger-rocha',
+    l: 'https://www.linkedin.com/in/roger-rocha-9027aa200/',
+    e: 'mail@rogerrochadev@gmail.com',
+    bg: '#808080',
     ls: [
         {
             id: 1,
-            i: 'ph:laptop-duotone',
-            l: 'My Portfolio Website',
-            u: 'https://example.com',
+            i: 'lucide:laptop',
+            l: 'Portfolio',
+            u: 'https://www.rogerocha.com/',
         },
         {
             id: 2,
-            i: 'ant-design:robot-outlined',
-            l: 'My Chatbot Project',
-            u: 'https://example.com/chatbot',
+            i: 'lucide:link',
+            l: 'Share My Bio',
+            u: 'https://share-my-bio.vercel.app/',
         },
         {
             id: 3,
-            i: 'fluent:brain-circuit-20-regular',
-            l: 'My Machine Learning Project',
-            u: 'https://example.com/ml',
-        },
-        {
-            id: 4,
-            i: 'icon-park-outline:blockchain',
-            l: 'My Blockchain Project',
-            u: 'https://example.com/blockchain',
-        },
-        {
-            id: 5,
-            i: 'ph:pencil-duotone',
-            l: 'My Blog Posts',
-            u: 'https://example.com/blog',
+            i: 'lucide:calendar-check-2',
+            l: 'Plan My Event',
+            u: 'https://plan-my-event.vercel.app/',
         },
     ],
 }

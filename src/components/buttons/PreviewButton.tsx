@@ -38,13 +38,13 @@ const PreviewButton: FC<PreviewButtonProps> = () => {
             <Drawer.Root>
                 <DrawerTrigger asChild>
                     <Button className="rounded-full max-w-[350px] w-full tracking-wide overflow-y-auto" >
-                        Preview page
+                        Pré-visualizar página
                     </Button>
                 </DrawerTrigger>
                 <DrawerContent className="h-[75%] pb-2">
                     {
                         isEmpty
-                            ? <div className='w-full text-sm text-muted-foreground h-[90%] flex justify-center items-center'>Nothing to show...</div>
+                            ? <div className='w-full text-sm text-muted-foreground h-[90%] flex justify-center items-center'>Nada para mostrar...</div>
                             : (
                                 <>
                                     {!isEmpty && selectedBgComponent}

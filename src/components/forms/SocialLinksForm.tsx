@@ -41,7 +41,7 @@ const SocialLinksForm: FC<SocialLinksFormProps> = () => {
             <CardHeader className="space-y-1">
                 <CardTitle className="text-2xl">Social Links</CardTitle>
                 <CardDescription>
-                    Enter your social media links here.
+                    Coloque o link das suas redes sociais aqui.
                 </CardDescription>
             </CardHeader>
             <CardContent className="grid md:grid-cols-2 gap-4">
@@ -52,7 +52,7 @@ const SocialLinksForm: FC<SocialLinksFormProps> = () => {
                             id={link.name}
                             name={link.id}
                             icon={link.icon}
-                            placeholder={`${link.name}.com/johndoe`}
+                            placeholder={`${link.name}.com/exemplo`}
                             value={data[link.id]}
                             onChange={handleInputChange}
                         />
