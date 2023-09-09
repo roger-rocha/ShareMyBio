@@ -11,10 +11,15 @@ interface DataProps {
     i: string;
     n: string;
     d: string;
+    f: string;
     t: string;
+    ig: string;
+    tg: string;
     e: string;
+    y: string;
     gh: string;
     l: string;
+    w: string;
     bg: string
     ls: AdditionalLinkProps[];
 }
@@ -36,10 +41,15 @@ const initialData: DataProps = {
     n: '',
     i: '',
     d: '',
+    f: '',
     t: '',
+    ig: '',
+    tg: '',
     gh: '',
     l: '',
     e: '',
+    w: '',
+    y: '',
     bg: '',
     ls: [],
 };
@@ -49,6 +59,11 @@ const demoData: DataProps = {
     i: 'https://avatars.githubusercontent.com/u/74687838?v=4',
     d: " O Desenvolvedor para seu projeto.",
     t: 'https://twitter.com/rogerrochadev',
+    f: 'https://twitter.com/rogerrochadev',
+    ig: 'https://twitter.com/rogerrochadev',
+    tg: 'https://twitter.com/rogerrochadev',
+    y: 'https://twitter.com/rogerrochadev',
+    w: 'https://twitter.com/rogerrochadev',
     gh: 'https://github.com/roger-rocha',
     l: 'https://www.linkedin.com/in/roger-rocha-9027aa200/',
     e: 'mail@rogerrochadev@gmail.com',

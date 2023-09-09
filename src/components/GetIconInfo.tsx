@@ -22,7 +22,7 @@ export default function GetIconInfo() {
                 <DialogHeader>
                     <DialogTitle>Escolha uma ícone key</DialogTitle>
                     <DialogDescription className="line">
-                        Encontre o melhor ícone que combine com o seu link e copie a "icon key", que se parece com isso: {" "}
+                        Encontre o melhor ícone que combine com o seu link e copie a icon key, que se parece com isso: {" "}
                         <code className="py-0.5 px-1 border bg-background rounded-md">
                             ic:sharp-cloud-queue
                         </code>

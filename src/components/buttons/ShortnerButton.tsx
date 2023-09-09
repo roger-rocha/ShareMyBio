@@ -13,21 +13,15 @@ import {
     TabsTrigger,
 } from "@/components/ui/tabs"
 import {
-    Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import { Button, buttonVariants } from '@/components/ui/button'
-import { Check, Copy, LinkIcon, Loader2 } from 'lucide-react'
-import { Input } from '../ui/input'
-import { ShortWithBitly } from '@/actions/ShortWithBitly'
-import { cn, encodeData } from '@/lib/utils'
-import { useData } from '@/lib/context/LinkContext'
+import { LinkIcon } from 'lucide-react'
+import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { toast } from 'sonner'
 
 export default function ShortnerButton() {
 
