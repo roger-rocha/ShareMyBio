@@ -12,15 +12,15 @@ import { SocialInput } from '@/components/ui/social-input'
 import { useData } from '@/lib/context/LinkContext'
 
 const socialLinksProvider: SocialLinkProviderProps[] = [
-    { name: 'facebook', icon: "ph:facebook-logo-duotone", id: "f" },
-    { name: 'twitter', icon: "ph:twitter-logo-duotone", id: "t" },
-    { name: 'instagram', icon: "ph:instagram-logo-duotone", id: "ig" },
-    { name: 'telegram', icon: "ph:telegram-logo-duotone", id: "tg" },
-    { name: 'youtube', icon: "ph:youtube-logo-duotone", id: "y" },
-    { name: 'email', icon: "ph:envelope-duotone", id: "e" },
-    { name: 'github', icon: "ph:github-logo-duotone", id: "gh" },
-    { name: 'linkedin', icon: "ph:linkedin-logo-duotone", id: "l" },
-    { name: 'whatsapp', icon: "ph:whatsapp-logo-duotone", id: "w" },
+    { name: 'facebook', icon: "ph:facebook-logo", id: "f" },
+    { name: 'twitter', icon: "ph:twitter-logo", id: "t" },
+    { name: 'instagram', icon: "ph:instagram-logo", id: "ig" },
+    { name: 'telegram', icon: "ph:telegram-logo", id: "tg" },
+    { name: 'youtube', icon: "ph:youtube-logo", id: "y" },
+    { name: 'email', icon: "ph:envelope", id: "e" },
+    { name: 'github', icon: "ph:github-logo", id: "gh" },
+    { name: 'linkedin', icon: "ph:linkedin-logo", id: "l" },
+    { name: 'whatsapp', icon: "ph:whatsapp-logo", id: "w" },
 ]
 
 type InputChangeEvent = React.ChangeEvent<HTMLInputElement>;

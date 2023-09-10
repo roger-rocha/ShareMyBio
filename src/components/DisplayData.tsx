@@ -22,15 +22,15 @@ const DisplayData: React.FC<DisplayDataProps> = ({ acc }) => {
         !acc.l;
 
     const iconMap: Record<string, string> = {
-        f: "ph:facebook-logo-duotone",
-        t: "ph:twitter-logo-duotone",
-        ig: "ph:instagram-logo-duotone",
-        tg: "ph:telegram-logo-duotone",
-        w: "ph:whatsapp-logo-duotone",
-        y: "ph:youtube-logo-duotone",
-        e: "ph:envelope-duotone",
-        gh: "ph:github-logo-duotone",
-        l: "ph:linkedin-logo-duotone"
+        f: "ph:facebook-logo",
+        t: "ph:twitter-logo",
+        ig: "ph:instagram-logo",
+        tg: "ph:telegram-logo",
+        w: "ph:whatsapp-logo",
+        y: "ph:youtube-logo",
+        e: "ph:envelope",
+        gh: "ph:github-logo",
+        l: "ph:linkedin-logo"
     };
 
     return (

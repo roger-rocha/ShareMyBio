@@ -68,7 +68,7 @@ export default function ShortnerButton() {
             <DialogTrigger asChild>
                 <Button className='w-full'>
                     <LinkIcon className='mr-2 h-4 w-4' />
-                    Encurtar URL
+                    Encurtar Link
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[450px]" showClose={false}>
