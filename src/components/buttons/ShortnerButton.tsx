@@ -68,32 +68,25 @@ export default function ShortnerButton() {
             <DialogTrigger asChild>
                 <Button className='w-full'>
                     <LinkIcon className='mr-2 h-4 w-4' />
-                    Shortner
+                    Encurtar URL
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[450px]" showClose={false}>
-                <Tabs defaultValue="account" >
-                    <TabsList className="grid w-full">
-                        <TabsTrigger value="dubco">Dub.co</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="dubco">
-                        <CardHeader className='px-0'>
-                            <CardTitle>Dub.co</CardTitle>
-                            <CardDescription>
-                                Shorten your link with dub.co and get full control over it.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent className="space-y-2 p-0">
-                            <Link
-                                target='_blank'
-                                href="http://dub.co/"
-                                className={cn(buttonVariants(), 'w-full')}
-                            >
-                                Visit website
-                            </Link>
-                        </CardContent>
-                    </TabsContent>
-                </Tabs>
+                <CardHeader className='px-0'>
+                    <CardTitle>Dub.co</CardTitle>
+                    <CardDescription>
+                        Encurte seu link em dub.co e tenha vários outros controles com ele.
+                    </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-2 p-0">
+                    <Link
+                        target='_blank'
+                        href="http://dub.co/"
+                        className={cn(buttonVariants(), 'w-full')}
+                    >
+                        Visitar site
+                    </Link>
+                </CardContent>
             </DialogContent>
         </Dialog>
 

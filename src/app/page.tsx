@@ -28,12 +28,12 @@ export default function Home() {
           <ProfileForm />
           <SocialLinksForm />
           <AdditionalLinksForm />
-
           <Background />
 
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2 justify-center items-center w-full '>
             <DemoData />
             <Publish />
+            <ShortnerButton/>
             <Link
               target='_blank'
               href="https://www.rogerocha.com/"
