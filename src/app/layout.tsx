@@ -7,9 +7,8 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-// Original source: https://github.com/sadmann7/skateshop/blob/main/src/app/layout.tsx
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linknode.vercel.app"),
+  metadataBase: new URL("https://share-my-bio.vercel.app/"),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -38,18 +37,18 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "sujjeee",
-      url: "https://github.com/sujjeee",
+      name: "rogerrocha",
+      url: "https://github.com/roger-rocha",
     },
   ],
-  creator: "sujjeee",
+  creator: "rogerrocha",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "pt_BR",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -60,7 +59,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og.jpg`],
-    creator: "@sujjeeee",
+    creator: "@rogerrocha",
   },
   icons: {
     icon: "/favicon.ico",

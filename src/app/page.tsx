@@ -13,9 +13,9 @@ import ShortnerButton from '@/components/buttons/ShortnerButton'
 import Background from '@/components/background/Background'
 
 export const siteConfig = {
-  name: "Share My Bio - seus links em um só lugar.",
-  description: "Share My Bio é uma alternativa gratuita ao link tree.",
-  ogImage: "https://linknode.vercel.app/og-image.png",
+  name: "Share My Bio - Seus links em um só lugar.",
+  description: "Compartilhe suas informações com facilidade e elegância.",
+  ogImage: "https://share-my-bio.vercel.app/og-image.png",
   url: "https://share-my-bio.vercel.app/",
 }
 
