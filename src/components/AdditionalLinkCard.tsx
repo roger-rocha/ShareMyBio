@@ -1,3 +1,4 @@
+import { safeWebUrl } from "@/lib/profile";
 import React, { FC } from 'react'
 import { Icon } from '@iconify/react';
 
@@ -7,10 +8,12 @@ interface AdditionalLinkCardProps {
     icon?: string;
 }
 const AdditionalLinkCard: FC<AdditionalLinkCardProps> = ({ label, url, icon }) => {
+    const safeUrl = safeWebUrl(url);
+    if (!safeUrl) return null;
     return (
         <li>
             {label && url && (
-                <a href={url} target="_blank">
+                <a href={safeUrl} target="_blank" rel="noopener noreferrer">
                     <dt className="flex items-center space-x-2 p-1 -m-1 rounded-xl hover:bg-slate-100 bg-slate-50">
                         <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-lg text-slate-500">
                             {icon ? (

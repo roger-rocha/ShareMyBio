@@ -1,3 +1,4 @@
+import { safeWebUrl } from "@/lib/profile";
 import React from 'react'
 import AdditionalLinkCard from '@/components/AdditionalLinkCard';
 import { Icon } from '@iconify/react';
@@ -38,7 +39,7 @@ const DisplayData: React.FC<DisplayDataProps> = ({ acc }) => {
             <div className="text-center z-50">
                 {acc.i && (
                     <Avatar className="h-20 w-20 rounded-full overflow-hidden ring ring-slate-200 mx-auto">
-                        <AvatarImage src={acc.i} alt={`${acc.n}'s profile picture`} className="h-full w-full object-cover" />
+                        <AvatarImage src={safeWebUrl(acc.i)} alt={`${acc.n}'s profile picture`} className="h-full w-full object-cover" />
                         <AvatarFallback>
                             <ImageIcon className='h-8 w-8 text-gray-300' />
                         </AvatarFallback>
@@ -52,9 +53,10 @@ const DisplayData: React.FC<DisplayDataProps> = ({ acc }) => {
                     {Object.entries(acc).map(([key, value]) => {
                         const excludedKeys = ["i", "n", "d", "bg"];
 
-                        if (key !== "ls" && value && !excludedKeys.includes(key)) {
+                        if (key in iconMap && typeof value === "string" && value && !excludedKeys.includes(key)) {
                             const propIcon = iconMap[key as keyof typeof iconMap];
                             if (key === "e") {
+                                if (!/^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(value)) return null;
                                 // Handle email link generation
                                 return (
                                     <span className="p-1" key={key}>
@@ -77,9 +79,11 @@ const DisplayData: React.FC<DisplayDataProps> = ({ acc }) => {
                                     </span>
                                 );
                             } else {
+                                const safeUrl = safeWebUrl(value);
+                                if (!safeUrl) return null;
                                 return (
                                     <span className="p-1" key={key}>
-                                        <a href={value} target="_blank" rel="noopener noreferrer">
+                                        <a href={safeUrl} target="_blank" rel="noopener noreferrer">
                                             <Icon icon={propIcon} className="h-6 w-6" />
                                         </a>
                                     </span>

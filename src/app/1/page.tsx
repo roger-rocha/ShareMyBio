@@ -7,21 +7,15 @@ import { decodeData } from '@/lib/utils'
 import DataLoading from './loading'
 import { BACKGROUND_OPTIONS } from '@/components/background/BgSnippets'
 
-export default function Links() {
+function Links() {
     const searchParams = useSearchParams()
     const acc = searchParams.get('data')
 
     if (!acc) {
         notFound();
     }
-    const [decodedData, setDecodedData] = React.useState<Acc | null>(null);
-
-    React.useEffect(() => {
-        if (acc) {
-            const decoded = decodeData(acc);
-            setDecodedData(decoded);
-        }
-    }, [acc]);
+    const decodedData = decodeData(acc);
+    if (!decodedData) notFound();
 
     // Find the matching background component based on the background code
     const selectedBgOption = decodedData
@@ -45,4 +39,8 @@ export default function Links() {
             </div>
         </>
     );
+}
+
+export default function LinksPage() {
+    return <React.Suspense fallback={<DataLoading />}><Links /></React.Suspense>;
 }
